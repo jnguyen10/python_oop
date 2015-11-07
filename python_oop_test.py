@@ -64,3 +64,32 @@ class Cat(object):
 # print "Garfield's Color:", garfield.color
 # print "Garfield's Type:", garfield.type
 # print "Garfield's Age:", garfield.age
+
+################################
+##      	 LAMBDA  	      ##
+################################
+
+abc = lambda x: x ** 2
+
+my_list = ['test_string', 99, abc]
+
+print my_list[2]
+
+print my_list[2](5)
+
+
+## MAP function takes in a function and a list, and applies function to each element in the list
+numList = [1,2,3,4,5]
+
+def square(num):
+	return num ** 2
+	
+## map using function above and list
+print map(square, numList)
+
+## Lambda can perform the same task as the square function
+print map(lambda x: x ** 2, numList)
+
+
+
+
